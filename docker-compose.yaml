@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  keycloak:
+    container_name: keycloak
+    build:
+      context: ./keycloak
+    ports:
+      - 8080:8080
+    networks:
+      - demonet
+
+  envoy:
+    container_name: envoy
+    build:
+      context: ./envoy
+    ports:
+      - 10000:10000
+    networks:
+      - demonet
+
+  upstream:
+    container_name: upstream
+    image: nginx
+    networks:
+      - demonet
+
+networks:
+  demonet: {}
