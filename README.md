@@ -8,7 +8,8 @@ Keycloak uses static import to create realm called "demorealm" and a client "dem
 
 ### how to run
 
+1. Add /etc/hosts entry: `127.0.0.1 keycloak`
 1. Start containers via `docker-compose up`
-2. Navigate to http://keycloak:8080, login as admin user (admin:admin) and create a test user
-3. Go to http://localhost:10000 where Envoy listens. You should see immediate redirect to keycloak for user auth. After successful auth you should see redirect to upstream (Nginx with default web page).
+1. Navigate to http://keycloak:8080, login as admin user (admin:admin) and create a test user
+1. Go to http://localhost:10000 where Envoy listens. You should see immediate redirect to keycloak for user auth. After successful auth you should see redirect to upstream (Nginx with default web page).
 
