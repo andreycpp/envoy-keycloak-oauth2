@@ -1,0 +1,29 @@
+{
+    "realm": "demorealm",
+    "enabled": "true",
+    "sslRequired": "none",
+    "clients": [
+        {
+            "clientId": "democlient",
+            "clientAuthenticatorType": "client-secret",
+            "secret": "69b26b08-12fe-48a2-85f0-6ab223f45777",
+            "redirectUris": [
+                "http://*"
+            ],
+            "protocol": "openid-connect"
+        }
+    ],
+    "users": [
+        {
+            "username": "aa",
+            "enabled": "true",
+            "credentials": [
+                {
+                    "type": "password",
+                    "secretData": "{\"value\":\"kNGQec20vpNf9eqvzky+X2X82etF4+S7lXIH/CAhZrULdTP8/et8vHPJ6JPrewZ5h1wNs3ya2jaN34x1LXclyQ==\",\"salt\":\"jHw554VBg7N56gDAxWatzA==\"}",
+                    "credentialData": "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+                }
+            ]
+        }
+    ]
+}
